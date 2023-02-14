@@ -88,19 +88,28 @@ function save() {
     //   });
     // })
 
-    /* POST request using fetch()*/
-    fetch("http://localhost:3000/employee", {
-        // Adding method type
-        method: "POST",
-        // Adding body or contents to send
-        body: JSON.stringify(callObject),
-        // Adding headers to the request
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    })
-        // Converting to JSON
-        .then(response => response.json())
-        // Displaying results to console
-        .then(json => console.log(json));
+    // /* POST request using fetch()*/
+    // fetch("http://localhost:3000/employee", {
+    //     // Adding method type
+    //     method: "POST",
+    //     // Adding body or contents to send
+    //     body: JSON.stringify(callObject),
+    //     // Adding headers to the request
+    //     headers: {
+    //         "Content-type": "application/json; charset=UTF-8"
+    //     }
+    // })
+    //     // Converting to JSON
+    //     .then(response => response.json())
+    //     // Displaying results to console
+    //     .then(json => console.log(json));
+
+    /* POST request using XMLHttpRequest*/
+    let request = new XMLHttpRequest
+    request.open("POST", "http://localhost:3000/employee");
+    request.setRequestHeader('Content-type', 'application/json')
+    request.send(JSON.stringify(callObject))
+    request.onload = () => {
+        console.log(request)
+ }
 }
