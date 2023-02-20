@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../Script/dashboard.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Dashboard</h1>
+    <div class="main-content">
+        <div class="heading">
+                Employee Details 
+            <a href="../View/createEmployee.html" class="addEmployee" >
+                + Add User
+            </a>
+        </div>
+        <!-- Table -->
+        <div class="table-main">
+            <table id="table-display" class="table"> 
+                <!-- Table Headings -->
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>department</th>
+                    <th>salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
