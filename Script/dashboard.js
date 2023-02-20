@@ -24,7 +24,7 @@ $(document).ready(function(){
                     <td>
                     <a class="add-buttom edit"  > 
                         <img src="../assets/edit.svg" alt="Edit"></a>
-                    <buttom class="add-buttom delete">
+                    <buttom class="add-buttom delete" onclick = "deleteEmployee(${value.id})">
                     <img style="height: 20px;width: 20px;" src="../assets/delete.png" alt="Delete"></buttom>
                     </td>
                 </tr>`
@@ -35,7 +35,22 @@ $(document).ready(function(){
 })
 
 
+deleteEmployee = (id)=> {
+    console.log(" employee information",id);
+    $.ajax({
+        type: 'delete',
+        url: "http://localhost:3000/employee/"+id,
+        //data: JSON.stringify(obj),
+        contentType: "application/json",
 
+        success: function (data){
+            console.log(data);
+        },
+        error: function (error) {
+            console.log(`Error ${error}`);
+        }
+    });
+};
 
 
 
