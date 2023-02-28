@@ -1,39 +1,23 @@
 {
   "employee": [
     {
+      "name": "Shiv1",
+      "profile": "../assets/profile1.png",
+      "gender": "Male",
+      "department": "HR,SALES",
+      "salary": "60000",
+      "startdate": "12 Oct 2018",
+      "note": "javaScript",
+      "id": 3
+    },
+    {
       "name": "Rutuja Patil",
       "profile": "../assets/profile2.png",
       "gender": "Female",
-      "department": [
-        "SALES",
-        "FINANCE"
-      ],
-      "salary": "30000",
-      "startdate": "16/Sept/2020",
-      "note": "javaScript",
-      "id": 1
-    },
-    {
-      "name": "Shubhangi Patil",
-      "profile": "../assets/profile2.png",
-      "gender": "Female",
-      "department": "SALES",
-      "salary": "30000",
-      "startdate": "17/Oct/2021",
-      "note": "java",
-      "id": 2
-    },
-    {
-      "name": "Shiv",
-      "profile": "../assets/profile1.png",
-      "gender": "Male",
-      "department": [
-        "HR",
-        "SALES"
-      ],
+      "department": "HR,SALES",
       "salary": "40000",
-      "startdate": "15/Oct/2018",
-      "note": "mdjbsdhnk",
+      "startdate": "17 Aug 2019",
+      "note": "java",
       "id": 4
     }
   ]

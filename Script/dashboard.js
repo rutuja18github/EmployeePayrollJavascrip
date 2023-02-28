@@ -22,8 +22,8 @@ $(document).ready(function(){
                     <td>${value.salary}</td>
                     <td>${value.startdate}</td>
                     <td>
-                    <a class="add-buttom edit"  > 
-                        <img src="../assets/edit.svg" alt="Edit"></a>
+                    <a class="add-buttom edit" onclick = "editEmployee(${value.id})" href ="../View/updateEmployee.html" > 
+                        <img src="../assets/edit.svg" alt="Edit" ></a>
                     <buttom class="add-buttom delete" onclick = "deleteEmployee(${value.id})">
                     <img style="height: 20px;width: 20px;" src="../assets/delete.png" alt="Delete"></buttom>
                     </td>
